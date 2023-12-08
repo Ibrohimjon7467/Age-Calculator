@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0f0f0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+@media (max-width: 640px) {
+    .form {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 511px) {
+    .output-container h1 {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 450px) {
+    .form {
+        flex-direction: column;
+    }
+    .i {
+        width: 100%;
+        flex-direction: column;
+    }
+    .i input {
+        width: 100%;
+        font-size: 25px;
+    }
+    .arrow {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 426px) {
+    .output-container h1 {
+        font-size: 50px;
+    }
+    .arrow {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 371px) {
+    .output-container h1 {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 342px) {
+    .output-container h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 314px) {
+    .output-container h1 {
+        font-size: 30px;
+    }
+}
